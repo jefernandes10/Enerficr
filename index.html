@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERFICR - Portal Administrativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Design_sem_nome__4_-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/ENERFICR__3_-removebg-preview.png" alt="ENERFICR"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="fatura.html">Faturas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Dashboard -->
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <div class="dashboard-container">
+                <!-- Gráfico do Power BI embutido -->
+                <iframe width="100%" height="650px" src="https://app.powerbi.com/reportEmbed?reportId=9c414efc-5848-42c0-bfbf-b024e5056668&autoAuth=true&ctid=2009dfae-df11-49c7-804d-fda8d5cd9865" frameborder="0" allowfullscreen="true"></iframe>
+                <div class="metricas">
+                    <div class="metrica">
+                        <h3>Total de Ganhos</h3>
+                        <p>R$ 100.000,00</p>
+                    </div>
+                    <div class="metrica">
+                        <h3>Consumo Total (kWh)</h3>
+                        <p>150.000 kWh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Clientes -->
+        <!--<section id="clientes">
+            <h1>Gerenciar Clientes</h1>
+            <form id="clienteForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome do Cliente" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email do Cliente" required>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço Completo" required>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Telefone do Cliente" required>
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+        </section>-->
+
+        <!-- Seção de Faturas -->
+        <!--<section id="faturas">
+            <h1>Gerar Faturas</h1>
+            <form id="faturaForm">
+                <label for="cliente">Cliente:</label>
+                <select id="cliente" name="cliente" required>
+                    <option value="">Selecione o cliente</option>-->
+                    <!-- Opções de clientes dinamicamente carregadas -->
+                <!--</select>
+                <label for="consumo">Consumo (kWh):</label>
+                <input type="number" id="consumo" name="consumo" placeholder="Consumo em kWh" required>
+                <label for="valor">Valor Total (R$):</label>
+                <input type="number" id="valor" name="valor" placeholder="Valor da Fatura" required>
+                <button type="submit">Gerar Fatura</button>
+            </form>
+        </section>-->
+
+        <!-- Seção de Relatórios -->
+        <!--<section id="relatorios">
+            <h1>Relatórios</h1>
+            <div class="relatorio-container">
+                <h2>Consumo por Período</h2>
+                <input type="month" id="inicio" name="inicio" placeholder="Mês Início">
+                <input type="month" id="fim" name="fim" placeholder="Mês Fim">
+                <button id="gerarRelatorio">Gerar Relatório</button>
+            </div>
+            <div class="grafico-relatorio">-->
+                <!-- Gráfico dinâmico -->
+            <!--</div>
+        </section>-->
+
+        <!-- Seção de Administração -->
+        <section id="admin">
+            <h1>Administração</h1>
+            <p>Configurações e monitoramento de atividades administrativas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ENERFICR - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

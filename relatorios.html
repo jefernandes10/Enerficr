@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERFICR - Portal Administrativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Design_sem_nome__4_-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/ENERFICR__3_-removebg-preview.png" alt="ENERFICR"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="fatura.html">Faturas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Relatórios -->
+        <section id="relatorios">
+            <h1>Relatórios</h1>
+            <div class="relatorio-container">
+                <h2>Consumo por Período</h2>
+                <input type="month" id="inicio" name="inicio" placeholder="Mês Início">
+                <input type="month" id="fim" name="fim" placeholder="Mês Fim">
+                <button id="gerarRelatorio">Gerar Relatório</button>
+            </div>
+            <div class="grafico-relatorio">
+                <!-- Gráfico dinâmico -->
+                <canvas id="relatorioGrafico"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    var ctx = document.getElementById('relatorioGrafico').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Cliente 1', 'Cliente 2', 'Cliente 3'],
+                            datasets: [{
+                            label: 'Consumo (kWh)',
+                            data: [120, 150, 180],
+                            backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                            }]
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ENERFICR - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

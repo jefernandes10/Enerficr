@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERFICR - Portal Administrativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Design_sem_nome__4_-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/ENERFICR__3_-removebg-preview.png" alt="ENERFICR"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="fatura.html">Faturas</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="administracao.html">Administração</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Clientes -->
+        <section id="clientes">
+            <h1>Gerenciar Clientes</h1>
+            <form action="cadastrar_cliente.php" method="post">
+                <input type="text" name="nome" placeholder="Nome do Cliente" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="endereco" placeholder="Endereço" required>
+                <input type="text" name="telefone" placeholder="Telefone" required>
+                <button type="submit">Cadastrar Cliente</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ENERFICR - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
