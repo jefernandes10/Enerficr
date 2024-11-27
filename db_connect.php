@@ -1,9 +1,9 @@
 <?php
 // Informações da conexão
-$servername = "localhost"; // Nome ou IP do servidor onde está o MySQL
-$username = "root"; // Nome de usuário do MySQL
-$password = "root"; // Senha do MySQL
-$dbname = "enerficrdb"; // Nome do banco de dados que você criou
+$servername = "sql307.infinityfree.com"; // Nome ou IP do servidor onde está o MySQL
+$username = "if0_37800457"; // Nome de usuário do MySQL
+$password = "3RdKwi1x0B9"; // Senha do MySQL
+$dbname = "if0_37800457_enerficrdb"; // Nome do banco de dados que você criou
 
 // Criar a conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
